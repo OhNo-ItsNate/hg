@@ -214,5 +214,6 @@ a:hover {
 .thumbnail {
     margin: 1%;
     width: 45%;
+    height: 45%;
     max-width: 200px;
 }
