@@ -102,6 +102,10 @@ a:hover {
 }
 
 /*IMAGES*/
+.social-row {
+    width: 50%;
+    margin: 0 auto;
+}
 .social {
     width: 25%;
     margin: 3%;
