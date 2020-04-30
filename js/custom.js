@@ -46,19 +46,19 @@ $('.playerControls .btn-stop').on('click', function() {
 //------------------GALLERY---------------------
 
 //HIDE GALLERYVIEWER UNTIL IMAGE IS SELECTED
-$('#galleryViewer').hide();
+$('#viewerBG').hide();
 
 //LISTEN FOR CLICK ON GALLERY IMAGE
 //DISPLAY IMAGE IN GALLERYVIEWER
 $('.thumbnail').on('click', function() {
-    $('#galleryViewer').show();
+    $('#viewerBG').show();
     const pic = $(this).attr('src');
-    $('#galleryViewer').append('<img src="' + pic + '" class="largePic" />')
+    $('.galleryViewer').append('<img src="' + pic + '" class="largePic" />')
 });
 
 //CLOSE GALLERYVIEWER WHEN X BUTTON IS CLICKED
 //REMOVE PREVIOUSLY SELECTED IMAGE
 $('.closeButton').on('click', function() {
-    $('#galleryViewer').hide();
+    $('#viewerBG').hide();
     $('.largePic').remove();
 });
