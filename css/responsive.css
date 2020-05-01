@@ -201,56 +201,12 @@
 
 /*-------------------------------------------------------------------BIO PAGE--------------------------------------------------------------------*/
 
-/*---------------LARGER PHONES-----------------*/
-@media only screen and (min-width: 370px) and (orientation: portrait) {
-    /*GALLERY*/
-    #viewerBG {
-        height: 260vh;
-    }
-    .galleryViewer {
-        margin: 0 2.5%;
-        top: 80%;
-    }
-}
-
-/*---------------LARGEST PHONES-----------------*/
-@media only screen and (min-width: 400px) and (orientation: portrait) {
-    /*GALLERY*/
-    #viewerBG {
-        height: 216vh;
-    }
-    .galleryViewer {
-        margin: 0 2.5%;
-        top: 78%;
-    }
-}
-
 /*------------TABLETS IN PORTRAIT--------------*/
 @media only screen and (min-width: 750px) and (orientation: portrait) {
     /*GALLERY*/
-    #viewerBG {
-        height: 118vh;
-    }
     .galleryViewer {
         width: 60%;
         margin: 0 20%;
-        top: 60%;
-    }
-    .largePic {
-        border: solid 2px #2ff642;
-    }
-}
-
-/*---------LARGEST TABLETS IN PORTRAIT---------*/
-@media only screen and (min-width: 1000px) and (orientation: portrait) {
-    /*GALLERY*/
-    #viewerBG {
-        height: 100vh;
-    }
-    .galleryViewer {
-        width: 60%;
-        margin: 0 20%;
-        top: 30%;
     }
     .largePic {
         border: solid 2px #2ff642;
@@ -260,13 +216,10 @@
 /*----------SMALL DESKTOPS/LAPTOPS-------------*/
 @media only screen and (min-width: 750px) and (orientation: landscape) {
     /*GALLERY*/
-    #viewerBG {
-        height: 185vh;
-    }
     .galleryViewer {
-        width: 60%;
-        margin: 0 20%;
-        top: 60%;
+        width: 55%;
+        margin: 0 23.5%;
+        top: 20%;
     }
     .closeButton {
         background-color: rgba(0,0,0,.5);
@@ -282,32 +235,13 @@
     }
 }
 
-/*---TABLETS IN LANDSCAPE & DESKTOPS/LAPTOPS---*/
-
-@media only screen and (min-width: 1000px) and (orientation: landscape) {
-    /*GALLERY*/
-    #viewerBG {
-        height: 113vh;
-    }
-    .galleryViewer {
-        width: 50%;
-        margin: 0 25%;
-        position: absolute;
-        top: 22%;
-    }
-}
-
 /*LARGER TABLETS IN LANDSCAPE & DESKTOPS/LAPTOPS*/
 
 @media only screen and (min-width: 1200px) and (orientation: landscape) {
     /*GALLERY*/
-    #viewerBG {
-        height: 101vh;
-    }
     .galleryViewer {
-        width: 50%;
-        margin: 0 25%;
-        position: absolute;
+        width: 40%;
+        margin: 0 30%;
         top: 15%;
     }
 }
@@ -328,16 +262,9 @@
     .bio-main {
         height: calc(100vh - 306px);
     }
-    /*GALLERY*/
-    GALLERY
-        #viewerBG {
-        width: 100%;
-        height: 100vh;
-    }
     .galleryViewer {
         width: 30%;
         margin: 0 35%;
-        top: 10%;
     }
     .closeButton {
         background-color: rgba(0,0,0,.5);
