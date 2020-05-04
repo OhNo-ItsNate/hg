@@ -52,7 +52,7 @@ $('#viewerBG').hide();
 //DISPLAY IMAGE IN GALLERYVIEWER
 $('.thumbnail').on('click', function() {
     $('#viewerBG').show();
-    const pic = $(this).attr('src');
+    var pic = $(this).attr('src');
     $('.galleryViewer').append('<img src="' + pic + '" class="largePic" />')
 });
 
