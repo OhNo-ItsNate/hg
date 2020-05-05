@@ -89,8 +89,11 @@ nav li a {
 nav a {
     color: #2ff642;
 }
-nav a:hover, nav a:focus {
-    border: 5px #2ff642 dotted;
+nav a:hover {
+    color: white;
+}
+nav a:focus {
+    color: white;
 }
 .selected {
     border-bottom: 5px #2ff642 dotted;
@@ -121,7 +124,7 @@ a:hover {
 .landing-main {
     height: calc(100vh - 90px);
     background: url(../img/hg/howling-goatmen-no-specks-2.jpg) 51% top no-repeat;
-    background-size: 800px;
+    background-size: 600px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -129,7 +132,7 @@ a:hover {
 
 .landing-main nav {
     position: relative;
-    top: 38vh;
+    top: 28vh;
 }
 .landing-main nav li a {
     font-size: 7.35vw;
@@ -153,8 +156,8 @@ a:hover {
 /*MAIN*/
 .music-main {
     height: calc(100vh - 157px);
-    background: url(../img/hg/goatmen-no-name.jpg) 30% top no-repeat;
-    background-size: 850px;
+    background: url(../img/hg/goatmen-no-name.jpg) 20% top no-repeat;
+    background-size: 600px;
     margin: 0;
     padding: 0;
     width: 100%;
