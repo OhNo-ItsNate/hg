@@ -89,8 +89,8 @@ nav li a {
 nav a {
     color: #2ff642;
 }
-nav a:focus {
-    border: 2px #2ff642 dotted;
+nav a:hover, nav a:focus {
+    border: 5px #2ff642 dotted;
 }
 .selected {
     border-bottom: 5px #2ff642 dotted;
@@ -183,6 +183,9 @@ a:hover {
     background: transparent;
     color: #2ff642;
     font-size: 2.75vw;
+}
+.btn:focus {
+    border: white dashed 0.75vw;
 }
 .btn img {
     width: 100%;
