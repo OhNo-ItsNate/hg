@@ -65,6 +65,18 @@
 
 /*-----------------------------------------------------------------LANDING PAGE------------------------------------------------------------------*/
 
+/*---------------LARGER PHONES-----------------*/
+@media only screen and (min-width: 350px) and (orientation: portrait) {
+    .landing-main {
+        height: calc(100vh - 99px);
+        background-position: 51% top;
+        background-size: 800px;
+    }
+    .landing-main nav {
+        top: 33vh;
+    }
+}
+
 /*------------TABLETS IN PORTRAIT--------------*/
 @media only screen and (min-width: 750px) and (orientation: portrait) {
     /*LANDING PAGE NAV*/
@@ -72,6 +84,9 @@
         height: calc(100vh - 99px);
         background-position: 51% top;
         background-size: 1500px;
+    }
+    .landing-main nav {
+        top: 34.3vh;
     }
     .landing-main nav li:nth-child(odd) {
         margin-left: 6%;
@@ -87,7 +102,7 @@
     .landing-main {
         height: calc(100vh - 86px);
         background-position: 51% top;
-        background-size: 800px;
+        background-size: 750px;
     }
     .landing-main nav li a {
         font-size: 6.5vw;
@@ -107,29 +122,13 @@
     /*LANDING PAGE NAV*/
     .landing-main {
         height: calc(100vh - 93px);
-        background-size: 1100px;
-    }
-    .landing-main nav li a {
-        font-size: 5vw;
-    }
-    .landing-main nav li:nth-child(odd) {
-        margin-left: 12%;
-    }
-    .landing-main nav li:nth-child(even) {
-        margin-right: 12%;
-    }
-}
-
-/*-----LARGEST TABLETS & DESKTOPS/LAPTOPS------*/
-
-@media only screen and (min-width: 1400px) and (orientation: landscape) {
-    /*LANDING PAGE NAV*/
-    .landing-main {
-        height: calc(100vh - 130px);
-        background-size: 1500px;
+        background-size: 850px;
     }
     .landing-main nav {
-        top: 35vh;
+        top: 20vh;
+    }
+    .landing-main nav li a {
+        font-size: 4vw;
     }
     .landing-main nav li:nth-child(odd) {
         margin-left: 15%;
@@ -139,17 +138,47 @@
     }
 }
 
+/*---------LARGEST DESKTOPS/LAPTOPS----------*/
+
+@media only screen and (min-width: 1400px) and (orientation: landscape) {
+    /*LANDING PAGE NAV*/
+    .landing-main {
+        height: calc(100vh - 130px);
+        background-size: 1100px;
+    }
+    .landing-main nav {
+        top: 24vh;
+    }
+    .landing-main nav li a {
+        font-size: 3.5vw;
+    }
+    .landing-main nav li:nth-child(odd) {
+        margin-left: 17%;
+    }
+    .landing-main nav li:nth-child(even) {
+        margin-right: 17%;
+    }
+}
+
 /*------------------------------------------------------------------MUSIC PAGE-------------------------------------------------------------------*/
+
+/*---------------LARGER PHONES-----------------*/
+@media only screen and (min-width: 350px) and (orientation: portrait) {
+    .music-main {
+        height: calc(100vh - 99px);
+        background-position: 30% top;
+        background-size: 700px;
+    }
+}
 
 /*------------TABLETS IN PORTRAIT--------------*/
 @media only screen and (min-width: 750px) and (orientation: portrait) {
     /*MAIN*/
     .music-main {
         height: calc(100vh - 260px);
-        background-position: 30%;
+        background-position: 30% top;
         background-size: 1500px;
     }
-
     /*AUDIO PLAYERS*/
     .btn {
         width: 8vw;
@@ -162,8 +191,8 @@
     /*MAIN*/
     .music-main {
         height: calc(100vh - 185px);
-        background-position: 30%;
-        background-size: 800px;
+        background-position: 30% top;
+        background-size: 600px;
     }
 
     /*AUDIO PLAYERS*/
@@ -179,8 +208,8 @@
 @media only screen and (min-width: 1000px) and (orientation: landscape) {
     .music-main {
         height: calc(100vh - 235px);
-        background-position: 30%;
-        background-size: 1200px;
+        background-position: 30% top;
+        background-size: 800px;
     }
 
     /*AUDIO PLAYERS*/
@@ -190,12 +219,12 @@
     }
 }
 
-/*-----LARGEST TABLETS & DESKTOPS/LAPTOPS------*/
+/*--------LARGEST DESKTOPS/LAPTOPS---------*/
 
 @media only screen and (min-width: 1400px) and (orientation: landscape) {
     .music-main {
         height: calc(100vh - 320px);
-        background-size: 1800px;
+        background-size: 1200px;
     }
 }
 
