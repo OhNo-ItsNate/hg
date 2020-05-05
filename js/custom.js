@@ -1,3 +1,6 @@
+//-----HIDES JAVASCRIPT DISABLED MESSAGE--------
+$('#jsDisabled').hide();
+
 //-----------AUDIO PLAYER CONTROLS--------------
 //HIDE PAUSE BUTTONS
 $('.btn-pause').hide();
@@ -44,6 +47,9 @@ $('.playerControls .btn-stop').on('click', function() {
 });
 
 //------------------GALLERY---------------------
+
+//SHOW IF JAVASCRIPT IS DISABLED
+$('.showIfNoJS').show();
 
 //HIDE GALLERYVIEWER UNTIL IMAGE IS SELECTED
 $('#viewerBG').hide();
