@@ -286,7 +286,7 @@
 
 /*----------LARGEST DESKTOPS/LAPTOPS-----------*/
 
-@media only screen and (min-width: 1400px) and (orientation: landscape) {
+@media only screen and (min-width: 1400px) and (min-height: 950px) and (orientation: landscape) {
     /*MAIN*/
     .bio-main {
         height: calc(100vh - 306px);
