@@ -10,22 +10,6 @@ $('.btn-pause').hide();
 //THIS WILL ENABLE TOGGLING BETWEEN SONGS
 var currentPlay = false;
 
-//ESTABLISH MUSIC OFF WITH VARIABLE SET TO FALSE
-//var currentPlay = false; 
-
-//PLAY ON CLICK
-//$('.Off').on('click', function() {
-//    $(this).hide();
-//    if (currentPlay == true) {
-//        $('.audioPlayers').trigger('pause');
-//        $('.Off').show();
-//        $('.On').hide();
-//    }
-//    $(this).prev().trigger('play');
-//    $(this).next().show();
-//    currentPlay = true;
-//});
-
 //PLAY ON CLICK
 //HIDE PLAY BUTTON
 //SHOW PAUSE BUTTON
@@ -56,6 +40,12 @@ $('.btn-pause').on('click', function() {
 //SETS CURRENT TIME TO ZERO
 //PLAYS SONG AT ZERO MARK
 $('.playerControls .btn-replay').on('click', function() {
+    if (currentPlay == true) {
+        $('.audioPlayers').trigger('pause');
+        $('.btn-play').show();
+        $('.btn-pause').hide();
+        
+    }
     $(this).parent().prev().trigger('pause');
     $(this).parent().prev().prop('currentTime', 0);
     $(this).parent().prev().trigger('play');
