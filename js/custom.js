@@ -5,19 +5,47 @@ $('#jsDisabled').hide();
 //HIDE PAUSE BUTTONS
 $('.btn-pause').hide();
 
+
+//CREATE CONDITION musicOn SET TO FALSE
+//THIS WILL ENABLE TOGGLING BETWEEN SONGS
+var currentPlay = false;
+
+//ESTABLISH MUSIC OFF WITH VARIABLE SET TO FALSE
+//var currentPlay = false; 
+
+//PLAY ON CLICK
+//$('.Off').on('click', function() {
+//    $(this).hide();
+//    if (currentPlay == true) {
+//        $('.audioPlayers').trigger('pause');
+//        $('.Off').show();
+//        $('.On').hide();
+//    }
+//    $(this).prev().trigger('play');
+//    $(this).next().show();
+//    currentPlay = true;
+//});
+
 //PLAY ON CLICK
 //HIDE PLAY BUTTON
 //SHOW PAUSE BUTTON
-$('.playerControls .btn-play').on('click', function() {
+$('.btn-play').on('click', function() {
+    if (currentPlay == true) {
+        $('.audioPlayers').trigger('pause');
+        $('.btn-play').show();
+        $('.btn-pause').hide();
+        
+    }
     $(this).hide();
     $(this).parent().prev().trigger('play');
     $(this).next().show();
+    currentPlay = true;
 });
 
 //PAUSE ON CLICK
 //HIDE PAUSE BUTTON
 //SHOW PLAY BUTTON
-$('.playerControls .btn-pause').on('click', function() {
+$('.btn-pause').on('click', function() {
     $(this).hide();
     $(this).parent().prev().trigger('pause');
     $(this).prev().show();
@@ -31,6 +59,9 @@ $('.playerControls .btn-replay').on('click', function() {
     $(this).parent().prev().trigger('pause');
     $(this).parent().prev().prop('currentTime', 0);
     $(this).parent().prev().trigger('play');
+    $(this).prev().prev().hide();
+    $(this).prev().show();
+    currentPlay = true;
 });
 
 //STOP FUNCTION
