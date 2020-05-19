@@ -178,6 +178,14 @@ a:hover {
     padding: 0 5%;
     margin-bottom: 15px;
 }
+.progressBar {
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(47,246,66,0.5);
+    margin-bottom: 2vh;
+}
 .btn {
     width: 10vw;
     margin: 1vw;

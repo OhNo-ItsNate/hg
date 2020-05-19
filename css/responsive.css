@@ -180,6 +180,10 @@
         background-size: 1500px;
     }
     /*AUDIO PLAYERS*/
+    .progressBar {
+        width: 45%;
+        height: 7.5px;
+    }
     .btn {
         width: 8vw;
         font-size: 1rem;
@@ -196,6 +200,10 @@
     }
 
     /*AUDIO PLAYERS*/
+    .progressBar {
+        width: 33%;
+        height: 7.5px;
+    }
     .btn {
         width: 4.5vw;
         border: #2ff642 solid 0.4vw;
@@ -209,7 +217,7 @@
     .music-main {
         height: calc(100vh - 235px);
         background-position: 30% top;
-        background-size: 750px;
+        background-size: 700px;
     }
 
     /*AUDIO PLAYERS*/
@@ -224,7 +232,7 @@
 @media only screen and (min-width: 1400px) and (orientation: landscape) {
     .music-main {
         height: calc(100vh - 320px);
-        background-size: 1200px;
+        background-size: 1000px;
     }
 }
 
