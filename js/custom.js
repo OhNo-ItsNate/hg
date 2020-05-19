@@ -89,3 +89,11 @@ $('.closeButton').on('click', function() {
     $('#viewerBG').hide();
     $('.largePic').remove();
 });
+
+//PROGRESS BAR TRACKS SONG DURATION
+$('#knewYouWell').on('timeupdate', function() {
+    $('#knewYouWellProg').attr("value", this.currentTime / this.duration);
+});
+$('#possessed').on('timeupdate', function() {
+    $('#thePossessedProg').attr("value", this.currentTime / this.duration);
+});
