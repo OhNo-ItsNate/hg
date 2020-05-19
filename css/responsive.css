@@ -209,7 +209,7 @@
     .music-main {
         height: calc(100vh - 235px);
         background-position: 30% top;
-        background-size: 800px;
+        background-size: 750px;
     }
 
     /*AUDIO PLAYERS*/
